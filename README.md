@@ -60,4 +60,4 @@ Projeto da disciplina de Front-End, Universidade Cruzeiro do Sul. Professora: El
 
 ---
 
-PADDOCK é um projeto acadêmico independente, sem vínculo com a Fórmula 1, a FIA ou as equipes.
+PADDOCK é um projeto acadêmico independente, sem vínculo com a Fórmula 1, e a FIA ou as equipes.
