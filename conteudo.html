@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Ciência da Velocidade — aerodinâmica, pneus e motor | PADDOCK</title>
+  <meta name="description" content="Matéria especial sobre aerodinâmica, pneus, estratégia e a unidade de potência da Fórmula 1 em 2026.">
+  <meta name="theme-color" content="#0a0a0b">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%230a0a0b'/%3E%3Cpath d='M8 39C8 21 15 10 25 10c9 0 12 8 6 14-6 6-1 14 11 14' fill='none' stroke='%23f3f2ed' stroke-width='3' stroke-linecap='round'/%3E%3Ccircle cx='25' cy='10' r='4.5' fill='%23c9ff1f'/%3E%3C/svg%3E">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="paddock-mark" viewBox="0 0 48 48">
+    <path d="M5 41C5 21 13 8 25 8c10 0 13 10 6 16-7 6-1 16 12 16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="25" cy="8" r="4.4" fill="#c9ff1f"/>
+  </symbol>
+</svg>
+
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="site-header" data-on="dark">
+  <a class="brand" href="index.html" aria-label="PADDOCK — página inicial">
+    <svg viewBox="0 0 48 48" aria-hidden="true"><use href="#paddock-mark"/></svg>
+    <span><span class="brand__word">PADDOCK</span><span class="brand__sub">A EXPERIÊNCIA DA FÓRMULA 1</span></span>
+  </a>
+  <p class="header__now mono">03 — A Ciência da Velocidade</p>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+    <span class="menu-btn__text">Menu</span>
+    <span class="menu-btn__lines" aria-hidden="true"></span>
+  </button>
+</header>
+
+<nav class="menu" id="menu" aria-label="Navegação do site">
+  <svg class="menu__trace" viewBox="0 0 800 500" aria-hidden="true"><path d="M90 380C60 300 110 230 190 210C260 192 290 140 350 110C430 70 520 90 540 150C556 200 520 230 560 270C600 310 700 290 730 350C750 395 700 440 620 430C540 420 520 380 450 395C380 410 360 460 270 450C190 440 120 440 90 380Z"/></svg>
+  <ul class="menu__list">
+      <li class="menu__item">
+        <a class="menu__link" href="index.html"><span class="menu__num">01</span><span class="menu__label">Início</span><span class="menu__sub">Além da velocidade</span></a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="sobre.html"><span class="menu__num">02</span><span class="menu__label">Sobre</span><span class="menu__sub">Sobre o PADDOCK</span></a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="conteudo.html" aria-current="page"><span class="menu__num">03</span><span class="menu__label">Ciência</span><span class="menu__sub">A Ciência da Velocidade</span></a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="explore.html"><span class="menu__num">04</span><span class="menu__label">Arquivo</span><span class="menu__sub">O Arquivo PADDOCK</span></a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="contato.html"><span class="menu__num">05</span><span class="menu__label">Contato</span><span class="menu__sub">Contato</span></a>
+      </li>
+  </ul>
+  <div class="menu__aside">
+    <p class="menu__slogan">Além da velocidade.</p>
+    <div class="menu__meta mono">
+      <span>A experiência da Fórmula 1</span>
+      <span>Temporada 2026 · 11 equipes · 22 pilotos</span>
+      <span>Equipes, circuitos, engenharia e bastidores</span>
+    </div>
+  </div>
+</nav>
+
+<main id="conteudo">
+
+  <section class="page-hero tone-dark" id="abertura" aria-labelledby="sci-titulo">
+    <figure class="foto" style="position:absolute;inset:0">
+      <img src="imagens/tecnologia/asa-traseira.png" alt="Asa traseira de um carro de Fórmula 1" fetchpriority="high">
+    </figure>
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,11,.7),rgba(10,10,11,.45) 40%,rgba(10,10,11,.92))"></div>
+    <div class="container" style="position:relative;min-height:62svh;display:flex;flex-direction:column;justify-content:flex-end">
+      <div class="page-hero__top mono"><span>03 — Edição especial</span><span>Temporada 2026</span></div>
+      <h1 class="display display--xl page-hero__title" id="sci-titulo">A ciência<br><span class="serif lime">da velocidade.</span></h1>
+      <div class="page-hero__row">
+        <p class="lead" data-reveal>Três ideias que explicam por que um carro de Fórmula 1 faz o que faz.</p>
+        <p class="mono" data-reveal>Leitura: cerca de 10 minutos</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tone-light" id="introducao" aria-labelledby="intro-titulo">
+    <div class="container">
+      <h2 class="sr-only" id="intro-titulo">Introdução</h2>
+      <div class="feature-intro">
+        <p class="lead" data-reveal>Em 2026 a Fórmula 1 reescreveu o manual: carros menores, asas que se mexem e uma unidade de potência com muito mais eletricidade.</p>
+        <div class="prose" data-reveal>
+          <p class="dropcap">Para entender uma corrida, ajuda saber três coisas: como o ar empurra o carro contra o chão, como os pneus definem o ritmo e de onde vem a potência. Os três assuntos se influenciam, e as novas regras mexeram nos três ao mesmo tempo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TÓPICO 1 — Aerodinâmica -->
+  <section class="section tone-paper topic" id="aerodinamica" aria-labelledby="aero-titulo">
+    <div class="container">
+      <div class="topic__head">
+        <span class="topic__num" aria-hidden="true" data-reveal>01</span>
+        <div>
+          <p class="eyebrow">Aerodinâmica e engenharia</p>
+          <h2 class="display display--lg" id="aero-titulo" style="margin-top:1rem">Asas que<br>se mexem</h2>
+        </div>
+      </div>
+
+      <div class="topic__cols">
+        <div class="topic__text">
+          <h3>O ar como parceiro</h3>
+          <div class="prose">
+            <p>Quando o ar passa pelas asas e pelo assoalho, ele empurra o carro para baixo. Essa força se chama <strong>downforce</strong> e deixa o carro colado ao asfalto nas curvas. O preço é o <strong>arrasto</strong>, que freia o carro nas retas.</p>
+            <p>Engenheiros passam o ano tentando ter muito downforce com pouco arrasto. É um equilíbrio, e cada circuito pede um acerto diferente.</p>
+          </div>
+
+          <h3>O que mudou em 2026</h3>
+          <ul class="checklist">
+            <li><span><strong>Asas ativas:</strong> as asas dianteira e traseira se movem. Nas retas abrem e reduzem o arrasto (modo reta); nas curvas fecham para manter a aderência (modo curva).</span></li>
+            <li><span><strong>Fim do DRS:</strong> o sistema anterior de asa traseira aberta saiu de cena.</span></li>
+            <li><span><strong>Carros menores:</strong> a distância entre os eixos encolheu 200 mm, para no máximo 3,4 m, e o assoalho ficou 100 mm mais estreito, com 1,9 m.</span></li>
+            <li><span><strong>Mais leves:</strong> o peso mínimo caiu de 800 kg para 768 kg segundo a F1; a McLaren cita 798 kg como valor anterior, por isso preferimos mostrar a regra nova.</span></li>
+            <li><span><strong>Assoalho mais plano:</strong> os túneis do efeito solo foram removidos, e a F1 estima menos downforce e até 40% menos arrasto.</span></li>
+          </ul>
+          <p class="pull">Menos arrasto nas retas, mais aderência nas curvas: o carro agora muda de forma durante a volta.</p>
+        </div>
+
+        <div class="topic__media">
+          <figure class="foto r-land"><img src="imagens/tecnologia/asa-dianteira.png" alt="Asa dianteira de um carro de Fórmula 1 vista de perto" loading="lazy" decoding="async"><figcaption class="foto__cap">Asa dianteira</figcaption></figure>
+
+          <figure class="diagram" data-reveal>
+            <svg viewBox="0 0 560 250" role="img" aria-labelledby="dg1-t dg1-d">
+              <title id="dg1-t">Asas ativas: modo reta e modo curva</title>
+              <desc id="dg1-d">Dois carros vistos de lado. No modo reta a asa traseira está aberta, com setas de ar passando livremente e arrasto baixo. No modo curva a asa está fechada, com setas apontando para baixo e downforce alto.</desc>
+              <g>
+                <text x="10" y="22">Modo reta</text>
+                <path class="dg-line" d="M30 150 L40 128 L120 118 L170 92 L215 92 L246 118 L250 150 Z"/>
+                <circle class="dg-line" cx="70" cy="156" r="20"/><circle class="dg-line" cx="215" cy="156" r="20"/>
+                <path class="dg-lime" d="M228 96 L262 84"/><path class="dg-lime" d="M228 104 L262 98" />
+                <path class="dg-dim" d="M10 70 H290 M10 52 H290 M10 192 H290"/>
+                <path class="dg-lime" d="M70 40 H120 M108 34 L120 40 L108 46"/>
+                <text x="10" y="226">Asa aberta · menos arrasto</text>
+              </g>
+              <g transform="translate(290,0)">
+                <text x="10" y="22">Modo curva</text>
+                <path class="dg-line" d="M30 150 L40 128 L120 118 L170 92 L215 92 L246 118 L250 150 Z"/>
+                <circle class="dg-line" cx="70" cy="156" r="20"/><circle class="dg-line" cx="215" cy="156" r="20"/>
+                <path class="dg-lime" d="M228 90 L262 90"/><path class="dg-lime" d="M228 98 L262 98"/>
+                <path class="dg-dim" d="M10 70 H290 M10 192 H290"/>
+                <path class="dg-lime" d="M150 50 V84 M142 74 L150 84 L158 74"/><path class="dg-lime" d="M100 50 V108 M92 98 L100 108 L108 98"/><path class="dg-lime" d="M200 50 V84 M192 74 L200 84 L208 74"/>
+                <text x="10" y="226">Asa fechada · mais downforce</text>
+              </g>
+            </svg>
+            <figcaption class="mono">Na reta, as asas abrem e o carro corta o ar. Na curva, fecham e o ar empurra o carro contra a pista.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TÓPICO 2 — Pneus -->
+  <section class="section tone-dark topic topic--flip" id="pneus" aria-labelledby="pneus-titulo">
+    <div class="container">
+      <div class="topic__head">
+        <span class="topic__num" aria-hidden="true" data-reveal>02</span>
+        <div>
+          <p class="eyebrow">Pneus e estratégia</p>
+          <h2 class="display display--lg" id="pneus-titulo" style="margin-top:1rem">Quatro<br>manchas de<br>borracha</h2>
+        </div>
+      </div>
+
+      <div class="topic__cols">
+        <div class="topic__text">
+          <h3>Os compostos</h3>
+          <div class="prose">
+            <p>A Pirelli é a fornecedora única desde 2011. Para o asfalto seco existem três compostos: <strong>macio</strong>, <strong>médio</strong> e <strong>duro</strong>. Para pista molhada, o <strong>intermediário</strong> e o de <strong>chuva extrema</strong>.</p>
+            <p>O macio dá mais aderência e acaba mais rápido; o duro dura mais, mas é mais lento por volta. A cada corrida a Pirelli leva três dos compostos secos.</p>
+          </div>
+
+          <h3>As regras que criam estratégia</h3>
+          <ul class="checklist">
+            <li><span>Em corrida seca, o piloto precisa usar <strong>dois compostos diferentes</strong>, o que exige ao menos uma parada.</span></li>
+            <li><span>Por fim de semana, cada piloto recebe um número limitado de jogos: sete deles ficam para a classificação e a corrida, e um precisa ser macio para o Q3.</span></li>
+            <li><span>Em 2026 os pneus ficam mais estreitos: cerca de 25 mm na frente e 30 mm atrás.</span></li>
+          </ul>
+
+          <h3>Quando parar?</h3>
+          <div class="prose">
+            <p>Parar cedo (<em>undercut</em>) pode render ar limpo e pneus novos antes do rival. Parar tarde (<em>overcut</em>) funciona quando o pneu velho ainda aguenta e o carro da frente fica preso no tráfego. Um safety car também pode mudar tudo, porque a parada sai mais barata.</p>
+          </div>
+        </div>
+
+        <div class="topic__media">
+          <figure class="foto r-wide"><img src="imagens/tecnologia/pneus.png" alt="Pneus Pirelli de Fórmula 1 empilhados nos boxes" loading="lazy" decoding="async"><figcaption class="foto__cap">Pneus Pirelli</figcaption></figure>
+
+          <figure class="diagram" data-reveal>
+            <svg viewBox="0 0 560 270" role="img" aria-labelledby="dg2-t dg2-d">
+              <title id="dg2-t">Estratégia de uma parada</title>
+              <desc id="dg2-d">Linha do tempo de uma corrida de 50 voltas dividida em dois stints. Do início até a volta 22 o piloto usa pneu médio; da volta 22 até a 50 usa pneu duro. A parada acontece na volta 22.</desc>
+              <text x="10" y="24">Corrida de 50 voltas · uma parada</text>
+              <path class="dg-dim" d="M20 190 H540"/>
+              <rect x="20" y="110" width="228" height="60" class="dg-fill-lime"/>
+              <rect x="248" y="110" width="292" height="60" class="dg-fill-dim"/>
+              <path class="dg-line" d="M248 90 V190"/>
+              <text class="dg-dark" x="34" y="146">Médio · voltas 1 a 22</text>
+              <text x="262" y="146">Duro · voltas 22 a 50</text>
+              <text x="154" y="82">Parada · volta 22</text>
+              <path class="dg-line" d="M20 196 V206 M248 196 V206 M540 196 V206"/>
+              <text x="14" y="224">0</text><text x="236" y="224">22</text><text x="528" y="224">50</text>
+              <text x="10" y="256">Dois compostos diferentes cumprem a regra do seco</text>
+            </svg>
+            <figcaption class="mono">Médio até a volta 22, duro até a bandeirada: com uma parada, o piloto já usa dois compostos.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TÓPICO 3 — Unidade de potência -->
+  <section class="section tone-light topic" id="potencia" aria-labelledby="pot-titulo">
+    <div class="container">
+      <div class="topic__head">
+        <span class="topic__num" aria-hidden="true" data-reveal>03</span>
+        <div>
+          <p class="eyebrow">Tecnologia e unidade de potência</p>
+          <h2 class="display display--lg" id="pot-titulo" style="margin-top:1rem">Metade<br>elétrica</h2>
+        </div>
+      </div>
+
+      <div class="topic__cols">
+        <div class="topic__text">
+          <h3>O que continua</h3>
+          <div class="prose">
+            <p>O motor a combustão segue sendo um <strong>V6 de 1,6 litro com turbo</strong>. Ele agora trabalha junto de uma parte elétrica muito maior, em uma divisão perto de 50% para cada lado.</p>
+          </div>
+
+          <h3>O que muda</h3>
+          <ul class="checklist">
+            <li><span><strong>MGU-H removido:</strong> a peça que aproveitava o calor do escapamento saiu.</span></li>
+            <li><span><strong>MGU-K mais forte:</strong> recupera e entrega cerca de três vezes mais energia, com até 350 kW.</span></li>
+            <li><span><strong>Combustível sustentável:</strong> as unidades usam combustíveis avançados.</span></li>
+            <li><span><strong>Overtake Mode (modo de ultrapassagem):</strong> quem chega a menos de um segundo do carro da frente em um ponto de detecção ganha energia extra na volta seguinte. Substitui o DRS e vale para todos os carros.</span></li>
+            <li><span><strong>Boost e Recharge:</strong> o piloto pode pedir mais potência para atacar ou defender e controlar a recuperação de energia ao tirar o pé.</span></li>
+          </ul>
+          <p class="pull">Gerenciar a bateria virou parte da pilotagem.</p>
+        </div>
+
+        <div class="topic__media">
+          <figure class="foto r-wide"><img src="imagens/tecnologia/motor.png" alt="Unidade de potência de um carro de Fórmula 1" loading="lazy" decoding="async"><figcaption class="foto__cap">Unidade de potência</figcaption></figure>
+
+          <figure class="diagram" data-reveal>
+            <svg viewBox="0 0 560 250" role="img" aria-labelledby="dg3-t dg3-d">
+              <title id="dg3-t">Fluxo de energia da unidade de potência</title>
+              <desc id="dg3-d">Diagrama em blocos. O motor V6 turbo e o MGU-K enviam potência às rodas. A bateria alimenta o MGU-K e recebe energia dele nas frenagens.</desc>
+              <rect class="dg-line" x="20" y="30" width="150" height="60"/><text x="38" y="66">Motor V6 turbo</text>
+              <rect class="dg-line" x="20" y="150" width="150" height="60"/><text x="38" y="186">Bateria</text>
+              <rect class="dg-fill-lime" x="230" y="150" width="130" height="60"/><text class="dg-dark" x="246" y="186">MGU-K</text>
+              <rect class="dg-line" x="410" y="90" width="130" height="70"/><text x="438" y="130">Rodas</text>
+              <path class="dg-lime" d="M170 60 H300 V120 H410"/>
+              <path class="dg-lime" d="M170 180 H230 M218 172 L230 180 L218 188"/>
+              <path class="dg-dim" d="M360 180 H385 V135 H410"/>
+              <path class="dg-line" d="M230 196 H170 M182 188 L170 196 L182 204"/>
+              <text x="236" y="236">Frenagem recarrega a bateria</text>
+              <text x="236" y="24">Tração combinada</text>
+            </svg>
+            <figcaption class="mono">O motor e o MGU-K empurram o carro. Na frenagem, o MGU-K devolve energia à bateria.</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <dl class="compare" data-reveal>
+        <div><h4>Antes de 2026</h4><dd style="margin:0">MGU-H e MGU-K, DRS, assoalho com túneis de efeito solo, carros mais longos e mais pesados.</dd></div>
+        <div><h4>Em 2026</h4><dd style="margin:0">MGU-K mais forte, Overtake Mode, asas ativas, assoalho plano, carros menores com 768 kg de peso mínimo.</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- Glossário -->
+  <section class="section tone-graphite bg-track" id="glossario" aria-labelledby="glos-titulo">
+    <div class="container">
+      <div class="marker mono"><span>04</span><span class="marker__line"></span><span>Glossário rápido</span></div>
+      <h2 class="display display--md" id="glos-titulo">Palavras que você vai ouvir.</h2>
+      <dl class="glossary" data-reveal>
+        <div><dt>Downforce</dt><dd>Força do ar que empurra o carro para baixo e ajuda nas curvas.</dd></div>
+        <div><dt>Arrasto</dt><dd>Resistência do ar contra o avanço do carro. Menos arrasto, mais velocidade final.</dd></div>
+        <div><dt>Stint</dt><dd>Trecho da corrida entre duas paradas nos boxes.</dd></div>
+        <div><dt>Undercut</dt><dd>Parar antes do rival para sair com pneus novos e ganhar a posição.</dd></div>
+        <div><dt>MGU-K</dt><dd>Motor-gerador ligado ao eixo, que recupera energia na frenagem e a devolve.</dd></div>
+        <div><dt>Overtake Mode</dt><dd>Energia extra para quem está a menos de um segundo do carro da frente.</dd></div>
+      </dl>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__cols">
+      <div>
+        <p class="footer__lead">Além da velocidade.</p>
+        <p class="mono muted" style="margin-top:1.2rem">A experiência da Fórmula 1</p>
+      </div>
+      <div>
+        <h2>Páginas</h2>
+        <ul>
+          <li><a class="link-u link-u--grow" href="index.html">Início</a></li>
+          <li><a class="link-u link-u--grow" href="sobre.html">Sobre o PADDOCK</a></li>
+          <li><a class="link-u link-u--grow" href="conteudo.html">A Ciência da Velocidade</a></li>
+          <li><a class="link-u link-u--grow" href="explore.html">O Arquivo PADDOCK</a></li>
+          <li><a class="link-u link-u--grow" href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Arquivo</h2>
+        <ul>
+          <li><a class="link-u link-u--grow" href="explore.html#equipes">Equipes 2026</a></li>
+          <li><a class="link-u link-u--grow" href="explore.html#circuitos">Circuitos</a></li>
+          <li><a class="link-u link-u--grow" href="explore.html#tecnologia">Tecnologia</a></li>
+          <li><a class="link-u link-u--grow" href="explore.html#capacetes">Capacetes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Projeto</h2>
+        <p>Uma publicação digital sobre a Fórmula 1, suas equipes, circuitos, engenharia e bastidores.</p>
+      </div>
+    </div>
+    <div class="footer__legal mono">
+      <span>© <span id="ano">2026</span> PADDOCK</span>
+      <span>Sem vínculo com a Fórmula 1, a FIA ou as equipes.</span>
+    </div>
+  </div>
+  <p class="footer__word" aria-hidden="true">PADDOCK</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
