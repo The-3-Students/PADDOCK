@@ -1,0 +1,65 @@
+PADDOCK - A experiência da Fórmula 1
+
+Site sobre a temporada 2026 da Fórmula 1: equipes, circuitos,
+engenharia e bastidores.
+
+Acesse o nosso site: https://the-3-students.github.io/PADDOCK/
+
+
+TEMA E OBJETIVO
+
+Tema: a temporada 2026 da Fórmula 1.
+Objetivo: explicar a Fórmula 1 de forma visual e simples, para quem está
+começando e para quem já acompanha o esporte.
+
+
+PÁGINAS
+
+index.html     Início: grid, circuitos, engenharia e bastidores
+sobre.html     Sobre: objetivo, justificativa, público-alvo e autores
+conteudo.html  A Ciência da Velocidade: aerodinâmica, pneus, motor e fontes
+explore.html   O Arquivo PADDOCK: galeria com filtro e busca
+contato.html   Contato: formulário com validação e perguntas frequentes
+
+
+O QUE O SITE FAZ
+
+- Layout que se adapta ao celular e ao computador
+- Menu que abre e fecha, com mouse ou teclado
+- Filtro e busca na galeria, com aviso quando nada é encontrado
+- Formulário validado em JavaScript (os dados não são enviados)
+- Perguntas frequentes que abrem e fecham
+
+
+TECNOLOGIAS
+
+HTML5, CSS3 e JavaScript.
+
+
+PASTAS
+
+css/      estilos do site (style.css)
+js/       interações do site (script.js)
+imagens/  fotos organizadas por assunto
+
+
+COMO ABRIR
+
+1. Extraia o arquivo ZIP em qualquer pasta.
+2. Dê dois cliques no arquivo index.html.
+O site abre no navegador. Não precisa instalar nada.
+
+
+EQUIPE
+
+Jonathan Estevão Lopes
+Guilherme De Carvalho
+Paulo Henrique
+
+Disciplina: Front-End
+Instituição: Universidade Cruzeiro do Sul - São Miguel Paulista
+Professora: Eliane Maria Da Silva Ribeiro
+
+
+O PADDOCK é um projeto acadêmico, sem vínculo com a Fórmula 1, a FIA
+ou as equipes.
