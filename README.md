@@ -52,9 +52,9 @@ Baixe o repositório e abra o `index.html` no navegador.
 
 ## Equipe
 
-- Jonathan Estevão Lopes
-- Guilherme De Carvalho
-- Paulo Henrique
+- Jonathan Estevão Lopes da Silva
+- Guilherme De Carvalho Sousa
+- Paulo Henrique Silva de Souza
 
 Projeto da disciplina de Front-End, Universidade Cruzeiro do Sul. Professora: Eliane Maria Da Silva Ribeiro.
 
